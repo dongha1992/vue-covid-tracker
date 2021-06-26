@@ -3,9 +3,13 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {},
+    container: {
+      center: true,
+      padding: '20px',
+    },
   },
   variants: {
     extend: {},
   },
   plugins: [],
-}
+};

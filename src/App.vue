@@ -1,6 +1,8 @@
 <template>
   <Header />
-  <div class="container"><router-view /></div>
+  <div class="container">
+    <router-view />
+  </div>
 </template>
 
 <script>
@@ -16,5 +18,3 @@
     },
   };
 </script>
-
-<style></style>
