@@ -1,6 +1,7 @@
 <template>
   <main v-if="!loading">
     <DataTitle :text="title" :dataDate="dataDate" />
+    <DataBoxese :status="status" />
   </main>
   <main class="flex flex-col align-center justify-center text-center" v-else>
     <div class="text-gray-500 text-3l mt-10 mb-6">Loading</div>
@@ -9,11 +10,12 @@
 
 <script>
   import DataTitle from '@/components/DataTitle';
+  import DataBoxese from '@/components/DataBoxes';
   import { BASE_URL } from '../config';
 
   export default {
     name: 'Home',
-    components: { DataTitle },
+    components: { DataTitle, DataBoxese },
     data() {
       return {
         loading: true,
